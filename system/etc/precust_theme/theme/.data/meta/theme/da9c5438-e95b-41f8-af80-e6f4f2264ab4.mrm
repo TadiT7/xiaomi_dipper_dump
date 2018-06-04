@@ -1,0 +1,124 @@
+{
+  "localId": "da9c5438-e95b-41f8-af80-e6f4f2264ab4",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "7e117cad1f6595992e54d34db8e69c00345e2fbd",
+  "platform": 6,
+  "size": 13013106,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "MIUI"
+  },
+  "designers": {
+    "fallback": "MIUI"
+  },
+  "titles": {
+    "zh_TW": "無界",
+    "bo_CN": "མཚམས་མེད།",
+    "en_US": "Limitless",
+    "ug_CN": "چەكسىز",
+    "zh_CN": "无界"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_miwallpaper_0.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_miwallpaper_0.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "08bb75ce-95c2-4dce-bda8-26ada823f241",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c0f0ee9c-3116-4ae6-8acc-402162a6715d",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "701a851a-c3b1-45a7-8b22-6f75bbf7aad3",
+      "resourceCode": "com.miui.touchassistant",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "a32a8f12-f5ab-4c09-8d0b-93cee9475e0c",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "74cc4ce8-2f4b-4b88-9ac1-71ad93a278af",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "2f2f5bb0-ba9c-403d-b9e1-d34ac856b884",
+      "resourceCode": "miwallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": "18:9"
+}

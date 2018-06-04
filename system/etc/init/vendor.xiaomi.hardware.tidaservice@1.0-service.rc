@@ -1,0 +1,4 @@
+service tidaservice /vendor/bin/tidad
+    class hal
+    user system
+    group system
