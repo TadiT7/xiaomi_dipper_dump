@@ -1,0 +1,93 @@
+{
+  "localId": "8bc5dbe4-2c57-4474-ad17-bd9a5eb55716",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "f2d9fded0326cfaeee9e9679549a3dd07db826e4",
+  "platform": 6,
+  "size": 265,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "MIUI"
+  },
+  "designers": {
+    "fallback": "MIUI"
+  },
+  "titles": {
+    "hi_IN": "असीमित",
+    "vi_VN": "Không giới hạn",
+    "ru_RU": "Безграничность",
+    "pt_BR": "Limitless",
+    "ar_EG": "بلا حدود",
+    "ml_IN": "അതിരറ്റത്",
+    "en_US": "Limitless",
+    "th_TH": "ไร้ขีดจำกัด",
+    "ne_NP": "अपार",
+    "as_IN": "সীমাহীন",
+    "ur_IN": "لامحدود",
+    "in_ID": "Tanpa Batas",
+    "es_US": "Ilimitado",
+    "te_IN": "అపరిమితం",
+    "mr_IN": "अमर्याद",
+    "uz_UZ": "Cheksiz",
+    "ne_IN": "अपार",
+    "ha_NG": "Na marasa iyaka",
+    "pl_PL": "Bez ograniczeń",
+    "es_ES": "Sin límites",
+    "it_IT": "Senza limiti",
+    "zh_HK": "無界",
+    "or_IN": "ସୀମାବିହୀନ",
+    "uk_UA": "Безмежність",
+    "lt_LT": "Beribis",
+    "my_MM": "အတိုင်းအဆမဲ့",
+    "ms_MY": "Tiada Batasan",
+    "bn_BD": "সীমাহীন",
+    "en_IN": "Limitless",
+    "ko_KR": "리미트리스",
+    "kn_IN": "ಅಪಾರ",
+    "sk_SK": "Bezhraničný",
+    "iw_IL": "ללא גבולות",
+    "zh_TW": "無界",
+    "bn_IN": "সীমাহীন",
+    "pa_IN": "ਅਸੀਮਿਤ",
+    "tr_TR": "Sınırsız",
+    "zh_CN": "无界",
+    "kk_KZ": "Шексіз",
+    "ro_RO": "Nelimitat",
+    "sr_RS": "Неограничено",
+    "el_GR": "Απεριόριστο",
+    "ja_JP": "リミットレス",
+    "fr_FR": "Illimité",
+    "en_GB": "Limitless",
+    "ta_IN": "வானமே எல்லை",
+    "az_AZ": "Limitsiz",
+    "cs_CZ": "Nekonečno",
+    "gu_IN": "અસીમિત",
+    "ur_PK": "لامحدود",
+    "fa_IR": "بی‌حاشیه"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": []
+  },
+  "builtInPreviews": {
+    "fallback": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "ebfce684-1d1e-4a70-ae14-f7ca038f4d34",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}
