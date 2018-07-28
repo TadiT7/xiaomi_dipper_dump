@@ -1,0 +1,34 @@
+#!/system/bin/sh
+
+rm -rf /mnt/sdcard/cameratest/
+mkdir /mnt/sdcard/cameratest/
+
+#send wakeup key to turn screen on
+input keyevent KEYCODE_WAKEUP
+
+#swipe to unlock
+input swipe 400 400 400 0
+
+if [ ! -n "$3" ]; then
+am start -n com.miui.cit/com.xiaomi.cameratest.CameraTestActivity --es camera "$1" --ei testType $2
+else
+am start -n com.miui.cit/com.xiaomi.cameratest.CameraTestActivity --es camera "$1" --ei testType $2 --ei remosicType $3
+fi
+
+
+#temporary sleep 10s to make sure image output done.
+for i in `seq 1 10`
+do
+    sleep 1
+    if [ -a /mnt/sdcard/cameratest/*.jpeg ]
+    then
+        image=`ls /mnt/sdcard/cameratest/*.jpeg`
+        echo Captured ${image}
+        sleep 1
+        break
+    fi
+done
+
+#end
+
+
