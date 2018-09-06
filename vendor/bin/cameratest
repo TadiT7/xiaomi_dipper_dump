@@ -1,0 +1,97 @@
+#!/system/bin/sh
+
+rm -rf /mnt/sdcard/cameratest/
+mkdir /mnt/sdcard/cameratest/
+
+#send wakeup key to turn screen on
+input keyevent KEYCODE_WAKEUP
+
+#swipe to unlock
+input swipe 400 400 400 0
+camera_id=-1
+camera_format=-1
+remosic_type=2
+filename_contain_resolution=0
+
+
+#tips
+tips( )
+{
+    echo "cameratest -n CAMERAID -f FORMAT  [-r REMOSIC] [-x]"
+    echo "camera test tips:"
+    echo "-n cameraId
+            0 back-main-camera
+            1 front-main-camera
+            20 back-sub-camera
+            40 front-sub-camera
+            41 IR"
+
+    echo "-f FORMAT
+            0 jpg
+            1 yuv
+            2 raw"
+
+    echo "-r REMOSAIC
+            0 full size(only support -n 1 -f 0 )
+            1 Quarter(only support -n 1 -f 0 )
+            2 disable(default)"
+
+    echo "-x filename contains resolution"
+}
+
+#deal input parameters
+while getopts n:f:r:x OPT
+do
+    case $OPT in
+        n)
+            camera_id=$OPTARG;;
+        f)
+            camera_format=$OPTARG;;
+        r)
+            remosic_type=$OPTARG;;
+        x)
+            filename_contain_resolution=1;;
+        ?)
+            tips
+            exit 1;;
+    esac
+done
+
+#check parameters
+if [ $camera_id = -1 ]; then
+    tips
+    exit 1
+fi;
+
+if [ $camera_format = -1 ]; then
+    tips
+    exit 1
+fi;
+
+
+if [ $remosic_type -ne 2 ]; then
+    if [ $camera_id -ne 1 -o $camera_format -ne 0 ]; then
+	tips
+        exit 1
+    fi
+
+fi
+
+#echo "$camera_id $camera_format  $remosic_type" 
+
+am start -n com.miui.cit/com.xiaomi.cameratest.CameraTestActivity --es camera "$camera_id" --ei testType $camera_format --ei showResolution $filename_contain_resolution --ei remosicType $remosic_type
+
+#temporary sleep 10s to make sure image output done.
+for i in `seq 1 10`
+do
+    sleep 1
+    if [ -a /mnt/sdcard/cameratest/*.* ]
+    then
+        image=`ls /mnt/sdcard/cameratest/*.*`
+        echo Captured ${image}
+        sleep 1
+        break
+    fi
+done
+
+#end
