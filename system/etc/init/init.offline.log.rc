@@ -1,0 +1,31 @@
+on post-fs-data
+	mkdir /data/local/log 0771 root shell
+
+service kernellog /system/bin/sh /system/bin/kernellog.sh
+	class main
+	disabled
+	oneshot
+	seclabel u:r:kernellog:s0
+
+service logcatlog /system/bin/sh /system/bin/logcatlog.sh
+	class main
+	disabled
+	oneshot
+	seclabel u:r:kernellog:s0
+
+on property:persist.sys.offlinelog.kernel=true
+	start kernellog
+
+on property:persist.sys.offlinelog.kernel=false
+	stop kernellog
+
+on property:persist.sys.offlinelog.logcat=true
+	start logcatlog
+
+on property:persist.sys.offlinelog.logcat=false
+	stop logcatlog
+
+service qseelogd /vendor/bin/qseelogd -num 5 -size 4194304
+	class late_start
+	user root
+	oneshot

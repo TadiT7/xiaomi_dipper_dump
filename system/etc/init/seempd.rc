@@ -1,0 +1,17 @@
+/********************************************************************
+Copyright (c) 2018 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+*********************************************************************/
+
+# Create the directories used by seemp
+on post-fs-data
+    mkdir /data/misc/seemp 0700 system system
+
+#start seempd service
+service seempd /system/bin/seempd
+    class late_start
+    user system
+    group system sdcard_rw
+    socket seempdw dgram 0666 system system
+
