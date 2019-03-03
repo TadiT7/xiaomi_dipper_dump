@@ -1,0 +1,3 @@
+<permissions>
+    <library name="miui_stat.jar" file="/system/framework/miuistatssdkshared.jar" />
+</permissions>
