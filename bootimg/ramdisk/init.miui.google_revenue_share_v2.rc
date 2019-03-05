@@ -1,0 +1,7 @@
+# Use the default value for new product.
+on property:ro.miui.cust_variant=* && property:ro.miui.customized_clientid=2
+    setprop ro.com.google.clientidbase android-xiaomi-rev1
+
+# Use the old client id for ru only
+on property:ro.miui.cust_variant=ru && property:ro.miui.customized_clientid=2
+    setprop ro.com.google.clientidbase android-xiaomi

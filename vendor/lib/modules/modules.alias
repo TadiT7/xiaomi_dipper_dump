@@ -1,0 +1,28 @@
+# Aliases extracted from modules themselves.
+alias platform:sdm845-asoc-snd snd_soc_sdm845
+alias of:N*T*Cqcom,sdm845-asoc-snd-stubC* snd_soc_sdm845
+alias of:N*T*Cqcom,sdm845-asoc-snd-stub snd_soc_sdm845
+alias of:N*T*Cqcom,sdm845-asoc-snd-tavilC* snd_soc_sdm845
+alias of:N*T*Cqcom,sdm845-asoc-snd-tavil snd_soc_sdm845
+alias of:N*T*Cqcom,wcd-dsp-mgrC* snd_soc_wcd9xxx
+alias of:N*T*Cqcom,wcd-dsp-mgr snd_soc_wcd9xxx
+alias of:N*T*Cqcom,audio-ref-clkC* snd_soc_wcd9xxx
+alias of:N*T*Cqcom,audio-ref-clk snd_soc_wcd9xxx
+alias i2c:tabla digital2 wcd_core
+alias i2c:tabla digital1 wcd_core
+alias i2c:tabla analog wcd_core
+alias i2c:tabla top level wcd_core
+alias of:N*T*Cqcom,wcd9xxx-i2cC* wcd_core
+alias of:N*T*Cqcom,wcd9xxx-i2c wcd_core
+alias of:N*T*Cqcom,tasha-i2c-pgdC* wcd_core
+alias of:N*T*Cqcom,tasha-i2c-pgd wcd_core
+alias of:N*T*Cqcom,tavil-i2cC* wcd_core
+alias of:N*T*Cqcom,tavil-i2c wcd_core
+alias of:N*T*Cqcom,wcd-spi-v2C* snd_soc_wcd_spi
+alias of:N*T*Cqcom,wcd-spi-v2 snd_soc_wcd_spi
+alias platform:swr-wcd swr_wcd_ctrl
+alias of:N*T*Cqcom,wcd-pinctrlC* pinctrl_wcd
+alias of:N*T*Cqcom,wcd-pinctrl pinctrl_wcd
+alias of:N*T*Cqcom,wcd-dsp-glinkC* wcd_dsp_glink
+alias of:N*T*Cqcom,wcd-dsp-glink wcd_dsp_glink
+alias fs-exfat exfat

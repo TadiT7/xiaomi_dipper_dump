@@ -1,0 +1,5 @@
+service checknv /system/bin/checknv
+    class late_start
+    user root
+    oneshot
+    seclabel u:r:vendor_init:s0
